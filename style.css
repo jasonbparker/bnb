@@ -29,6 +29,10 @@ section.alternate-background {
   background-color: #00a699;
   color: #fff;
 }
+form div {
+  justify-content: space-between;
+  display: flex;
+}
 
 main img {
   width: 100px;
@@ -36,9 +40,18 @@ main img {
 
 /* ---  Groups & Items --- */
 
+.group2 img {
+  width: 100%;
+}
 .group {
   display: flex;
+  flex-direction: row;
+  padding: 0 0 20px 105px;
+}
+.group2 {
+  flex: 1;
   flex-direction: column;
+  margin-bottom: 20px;
 }
 
 .item {
@@ -48,6 +61,7 @@ main img {
 
 .item-double {
   flex: 2;
+  flex-direction: column;
 }
 
 /* -------  Navigation ------- */
@@ -83,6 +97,10 @@ header nav ul li a:hover {
 form {
   border: 2px solid #ff385c;
   padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
 }
 
 form label {
@@ -117,3 +135,31 @@ footer p {
 }
 
 /* -------  Media Query ------- */
+@media all and (min-width: 480px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+  header nav ul li {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .group2 {
+    display: flex;
+    flex-direction: row;
+  }
+  .item2 {
+    display: flex;
+    flex-direction: row;
+  }
+  form {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  form div {
+    flex-direction: column;
+  }
+  nav ul {
+    flex-wrap: wrap;
+  }
+}
