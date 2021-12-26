@@ -52,6 +52,7 @@ main img {
   flex: 1;
   flex-direction: column;
   margin-bottom: 20px;
+  align-items: center;
 }
 
 .item {
@@ -147,6 +148,7 @@ footer p {
   .group2 {
     display: flex;
     flex-direction: row;
+    align-items: center;
   }
   .item2 {
     display: flex;
